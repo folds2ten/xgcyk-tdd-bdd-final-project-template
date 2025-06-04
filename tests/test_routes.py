@@ -182,7 +182,7 @@ class TestProductRoutes(TestCase):
         data = response.get_json()
         self.assertIn("was not found", data["message"])
 
-        def test_update_product(self):
+    def test_update_product(self):
         """It should Update an existing Product"""
         # create a product to update
         test_product = ProductFactory()
